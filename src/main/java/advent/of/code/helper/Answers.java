@@ -9,7 +9,12 @@ public enum Answers {
     TASK_2_1_TEST (15),
     TASK_2_2_TEST (12),
     TASK_2_1_REAL (15632),
-    TASK_2_2_REAL (14416);
+    TASK_2_2_REAL (14416),
+
+    TASK_3_1_TEST (157),
+    TASK_3_2_TEST (70),
+    TASK_3_1_REAL (8243),
+    TASK_3_2_REAL (2631);
 
     private final Object answer;
 
