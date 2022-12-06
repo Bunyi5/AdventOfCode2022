@@ -20,9 +20,7 @@ public class Task5 {
 
     private static void runMain(RunType runType) throws IOException {
         System.out.println(runType);
-        String input = Helper.convertTxtToStringContent(TASK_NUMBER, runType);
-        String[] drawing = input.split(Helper.LINE_SEPARATOR + Helper.LINE_SEPARATOR);
-
+        String[] drawing = Helper.convertTxtToStringArray(TASK_NUMBER, runType, Helper.LINE_SEPARATOR + Helper.LINE_SEPARATOR);
 
         String topCratesForCrateMover9000 = getTopCrates(drawing, false);
         System.out.println("Top crates for CrateMover9000: " + topCratesForCrateMover9000);

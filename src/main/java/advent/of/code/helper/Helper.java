@@ -40,6 +40,12 @@ public class Helper {
             .collect(Collectors.toList());
     }
 
+    public static String[] convertTxtToStringArray(int taskNumber, RunType runType, String separator) throws IOException {
+        String content = convertTxtToStringContent(taskNumber, runType);
+
+        return content.split(separator);
+    }
+
     public static int[][] convertTxtToIntArray(int taskNumber, RunType runType, String separator) throws IOException {
         List<String> stringList = convertTxtToStringList(taskNumber, runType, Helper.LINE_SEPARATOR);
 
