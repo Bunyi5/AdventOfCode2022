@@ -20,7 +20,12 @@ public enum Answers {
     TASK_4_1_TEST (2),
     TASK_4_2_TEST (4),
     TASK_4_1_REAL (441),
-    TASK_4_2_REAL (861);
+    TASK_4_2_REAL (861),
+
+    TASK_5_1_TEST ("CMZ"),
+    TASK_5_2_TEST ("MCD"),
+    TASK_5_1_REAL ("WCZTHTMPS"),
+    TASK_5_2_REAL ("BLSGJSDTS");
 
     private final Object answer;
 
