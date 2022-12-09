@@ -46,7 +46,7 @@ public class Helper {
         return content.split(separator);
     }
 
-    public static int[][] convertTxtToIntArray(int taskNumber, RunType runType, String separator) throws IOException {
+    public static int[][] convertTxtToIntMatrix(int taskNumber, RunType runType, String separator) throws IOException {
         List<String> stringList = convertTxtToStringList(taskNumber, runType, Helper.LINE_SEPARATOR);
 
         return stringList.stream()
